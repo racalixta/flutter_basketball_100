@@ -1,2 +1,5 @@
 # flutter_basketball_100
- Project to training basket ball
+---
+This is a personal app project designed to train basketball and also to train my knowledge in Flutter.
+
+---
