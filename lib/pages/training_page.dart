@@ -9,12 +9,26 @@ class TrainingPage extends StatefulWidget {
 }
 
 class _TrainingPageState extends State<TrainingPage> {
+  newTraining() {
+    print('novo treino');
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        centerTitle: true,
-        title: const Text('Training'),
+        title: const Text('Treinos'),
+        actions: [
+          FloatingActionButton(
+            backgroundColor: Colors.transparent,
+            elevation: 0,
+            onPressed: () => newTraining(),
+            child: const Icon(
+              Icons.add,
+              color: Colors.white,
+            ),
+          ),
+        ],
         backgroundColor: Colors.deepPurple[600],
         titleTextStyle: const TextStyle(
           color: Colors.white,
