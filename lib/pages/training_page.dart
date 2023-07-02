@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_basketball_100/widgets/training_card.dart';
 
 class TrainingPage extends StatefulWidget {
   const TrainingPage({super.key});
@@ -20,6 +21,12 @@ class _TrainingPageState extends State<TrainingPage> {
           fontSize: 23,
           fontWeight: FontWeight.w500,
         ),
+      ),
+      body: const Column(
+        children: [
+          TrainingCard(),
+          TrainingCard(),
+        ],
       ),
     );
   }
