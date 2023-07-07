@@ -1,17 +1,17 @@
 class TrainingModel {
-  String baseId;
+  // String baseId;
   String title;
-  String creator;
+  // String creator;
   String details;
-  int totalThrow;
-  int position;
+  // int totalThrow;
+  // int position;
 
   TrainingModel({
-    required this.baseId,
+    // required this.baseId,
     required this.title,
-    required this.creator,
+    // required this.creator,
     required this.details,
-    required this.totalThrow,
-    required this.position,
+    // required this.totalThrow,
+    // required this.position,
   });
 }

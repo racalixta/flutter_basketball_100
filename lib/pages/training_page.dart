@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_basketball_100/pages/new_training_page.dart';
 import 'package:flutter_basketball_100/widgets/training_card.dart';
 
 class TrainingPage extends StatefulWidget {
@@ -10,7 +11,12 @@ class TrainingPage extends StatefulWidget {
 
 class _TrainingPageState extends State<TrainingPage> {
   newTraining() {
-    print('novo treino');
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (_) => const NewTrainingPage(),
+      ),
+    );
   }
 
   @override
