@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_basketball_100/widgets/training_options.dart';
 
 class NewTrainingPage extends StatefulWidget {
   const NewTrainingPage({super.key});
@@ -99,6 +100,8 @@ class _NewTrainingPageState extends State<NewTrainingPage> {
                   ),
                 ),
                 const Divider(),
+
+                // DOIS PONTOS
                 Padding(
                   padding: const EdgeInsets.all(24),
                   child: Column(
@@ -110,31 +113,7 @@ class _NewTrainingPageState extends State<NewTrainingPage> {
                           fontWeight: FontWeight.bold,
                         ),
                       ),
-                      CheckboxListTile(
-                        value: cornerLeft,
-                        title: const Text('Zona Morta Esquerda'),
-                        onChanged: (value) => change(value, 'cornerLeft'),
-                      ),
-                      CheckboxListTile(
-                        value: wingLeft,
-                        title: const Text('Ala Esquerda'),
-                        onChanged: (value) => change(value, 'wingLeft'),
-                      ),
-                      CheckboxListTile(
-                        value: center,
-                        title: const Text('Centro'),
-                        onChanged: (value) => change(value, 'center'),
-                      ),
-                      CheckboxListTile(
-                        value: wingRight,
-                        title: const Text('Ala Direita'),
-                        onChanged: (value) => change(value, 'wingRight'),
-                      ),
-                      CheckboxListTile(
-                        value: cornerRight,
-                        title: const Text('Zona Morta Direita'),
-                        onChanged: (value) => change(value, 'cornerRight'),
-                      ),
+                      const TrainingOptions(),
                       Padding(
                         padding: const EdgeInsets.only(bottom: 8),
                         child: TextFormField(
@@ -155,7 +134,8 @@ class _NewTrainingPageState extends State<NewTrainingPage> {
                     ],
                   ),
                 ),
-                const Divider(),
+
+                // TRES PONTOS
                 Padding(
                   padding: const EdgeInsets.all(24),
                   child: Column(
@@ -167,31 +147,7 @@ class _NewTrainingPageState extends State<NewTrainingPage> {
                           fontWeight: FontWeight.bold,
                         ),
                       ),
-                      CheckboxListTile(
-                        value: cornerLeft,
-                        title: const Text('Zona Morta Esquerda'),
-                        onChanged: (value) => change(value, 'cornerLeft'),
-                      ),
-                      CheckboxListTile(
-                        value: wingLeft,
-                        title: const Text('Ala Esquerda'),
-                        onChanged: (value) => change(value, 'wingLeft'),
-                      ),
-                      CheckboxListTile(
-                        value: center,
-                        title: const Text('Centro'),
-                        onChanged: (value) => change(value, 'center'),
-                      ),
-                      CheckboxListTile(
-                        value: wingRight,
-                        title: const Text('Ala Direita'),
-                        onChanged: (value) => change(value, 'wingRight'),
-                      ),
-                      CheckboxListTile(
-                        value: cornerRight,
-                        title: const Text('Zona Morta Direita'),
-                        onChanged: (value) => change(value, 'cornerRight'),
-                      ),
+                      const TrainingOptions(),
                       Padding(
                         padding: const EdgeInsets.only(bottom: 8),
                         child: TextFormField(
@@ -212,6 +168,7 @@ class _NewTrainingPageState extends State<NewTrainingPage> {
                     ],
                   ),
                 ),
+
                 Padding(
                   padding: const EdgeInsets.all(24.0),
                   child: ElevatedButton(
